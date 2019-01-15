@@ -24,7 +24,7 @@
 %
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{reedthesis}[2004/01/27 The Reed College Thesis Class]
+\ProvidesClass{amherstthesis}[2019/01/15 Amherst College Statistics]
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ProcessOptions\relax
 \LoadClass{book}
@@ -116,12 +116,12 @@
   \pagestyle{fancy}
 
 % Psych majors: You do not need the following six lines, as it conflicts with apacite, so comment them out.
-  \let\oldthebibliography=\thebibliography
-  \let\endoldthebibliography=\endthebibliography
-  \renewenvironment{thebibliography}[1]{
-    \oldthebibliography{#1}
-    \addcontentsline{toc}{chapter}{\bibname}
-  }{\endoldthebibliography}
+%  \let\oldthebibliography=\thebibliography
+%  \let\endoldthebibliography=\endthebibliography
+%  \renewenvironment{thebibliography}[1]{
+%    \oldthebibliography{#1}
+%    \addcontentsline{toc}{chapter}{\bibname}
+%  }{\endoldthebibliography}
  %%%%%% end of things for psych majors to comment out
 
   \let\oldtheindex=\theindex
@@ -275,10 +275,10 @@
 
 \ifx\@pdfoutput\@undefined
   \newcommand{\RTpercent}{\@percentchar\space}
-  \AtBeginDvi{\special{!\RTpercent Reed College LaTeX Thesis Class 2001/12/04 SN}}
-  \AtBeginDvi{\special{rawpostscript \RTpercent Reed College LaTeX Thesis Class 2001/12/04 SN}}
+  \AtBeginDvi{\special{!\RTpercent Amherst College LaTeX Thesis Class 2019/01/15 BEB}}
+  \AtBeginDvi{\special{rawpostscript \RTpercent Amherst College LaTeX Thesis Class 2019/01/15 BEB}}
 \else
-  \AtEndDocument{\pdfinfo{/Creator	(Reed College LaTeX Thesis Class 2001/12/04 SN)}}
+  \AtEndDocument{\pdfinfo{/Creator	(Amherst College LaTeX Thesis Class 2019/01/15 BEB)}}
 \fi
 
 % I hacked the title page to all be the same font size
@@ -303,7 +303,7 @@
     \vfil
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \vfil
-    A Thesis \\
+    A Comprehensive Evaluation Report \\
     Presented to \\
     \@thedivisionof \ \@division \\
     \@institution
