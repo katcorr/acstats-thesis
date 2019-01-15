@@ -2,18 +2,17 @@
 author: 'Your R. Name'
 date: 'May 20xx'
 institution: 'Amherst College'
-division: 'Mathematics and Statistics'
 advisor: 'Advisor F. Name'
 #altadvisor: 'Your Other Advisor'
 # Delete line 6 if you only have one advisor
-department: 'Mathematics'
+department: 'Mathematics and Statistis'
 degree: 'Bachelor of Arts'
-title: 'My Final College Paper'
+title: 'My Comprehensive Evaluation Report'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-#  thesisdown::thesis_pdf: default
-  thesisdown::thesis_gitbook: default
+  thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
 # If you are creating a PDF you'll need to write your preliminary content here or
 # use code similar to line 20 for the files.  If you are producing in a different
 # format than PDF, you can delete or ignore lines 20-31 in this YAML header.
