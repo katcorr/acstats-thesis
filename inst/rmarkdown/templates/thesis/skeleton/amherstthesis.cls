@@ -201,10 +201,12 @@
 \def\@division{\@latex@warning@no@line{No \noexpand\division given}}
 \def\department#1{\gdef \@department{#1}}
 \def\@department{\@latex@warning@no@line{No \noexpand\department given}}
-\def\thedivisionof#1{\gdef \@thedivisionof{#1}}
-\def\@thedivisionof{The Division of}
+\def\major#1{\gdef \@major{#1}}
+\def\@major{\@latex@warning@no@line{No \noexpand\major given}}
+\def\thedepartmentof#1{\gdef \@thedepartmentof{#1}}
+\def\@thedepartmentof{The Department of}
 \def\approvedforthe#1{\gdef \@approvedforthe{#1}}
-\def\@approvedforthe{Division}
+\def\@approvedforthe{Major}
 \def\advisor#1{\gdef \@advisor{#1}}
 \def\@advisor{\@latex@warning@no@line{No \noexpand\advisor given}}
 \def\altadvisor#1{\gdef \@altadvisor{#1} \@altadvisortrue}
@@ -305,7 +307,7 @@
     \vfil
     A Comprehensive Evaluation Report \\
     Presented to \\
-    \@thedivisionof \ \@division \\
+    \@thedepartmentof \ \@department \\
     \@institution
     \vfil
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
@@ -330,12 +332,12 @@
 %% Approved for the division page
   \cleardoublepage
   {\fontsize{12}{14}
-  \setbox0=\hbox{Approved for the \@approvedforthe}
+  \setbox0=\hbox{Approved for the Statistics \@approvedforthe}
   \thispagestyle{empty}
   \null\vfil		% just below center of page
   \par\vskip 6cm	% below center, not center
   \centerline{\copy0}	% approved
-  \centerline{(\@department)} %major
+  \centerline{in the Department of \@department} %major
   \vskip 1cm		%space to sign
   \centerline{\makebox[\wd0][c]{\hrulefill}
 	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\hrulefill} \fi}
