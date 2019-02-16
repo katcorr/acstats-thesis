@@ -164,8 +164,7 @@ You can have a dedication here if you wish.
 }
 
 \Preface{
-This is an example of a thesis setup to use the amherst thesis document
-class (for LaTeX) and the R bookdown package, in general.
+
 }
 
 \Abstract{
@@ -189,10 +188,7 @@ Second paragraph of abstract starts here.
   \begin{acknowledgements}
     I want to thank a few people.
   \end{acknowledgements}
-  \begin{preface}
-    This is an example of a thesis setup to use the amherst thesis document
-    class (for LaTeX) and the R bookdown package, in general.
-  \end{preface}
+
   \hypersetup{linkcolor=black}
   \setcounter{tocdepth}{2}
   \tableofcontents
@@ -258,6 +254,10 @@ be anyone in the sciences, but the user-friendly nature of
 figures, automatically generate a table of contents, index, references,
 table of figures, etc. should make it of great benefit to nearly anyone
 writing a thesis project.
+
+The preface pretty much says it all. \par
+
+Second paragraph of abstract starts here.
 
 \hypertarget{rmd-basics}{\chapter{R Markdown Basics}\label{rmd-basics}}
 
@@ -592,74 +592,62 @@ finish his book, which contained a lot of mathematics. One nice feature
 of \emph{R Markdown} is its ability to read LaTeX code directly.
 
 If you are doing a thesis that will involve lots of math, you will want
-to read the following section which has been commented out. If you're
-not going to use math, skip over or delete this next commented section.
+to read the following section.
 
-\section{Chemistry 101: Symbols}\label{chemistry-101-symbols}
+\[
+\sum_{j=1}^n (\delta\theta_j)^2 \leq {{\beta_i^2}\over{\delta_i^2 + \rho_i^2}}
+\left[ 2\rho_i^2 + {\delta_i^2\beta_i^2\over{\delta_i^2 + \rho_i^2}} \right] \equiv \omega_i^2
+\]
 
-Chemical formulas will look best if they are not italicized. Get around
-math mode's automatic italicizing in LaTeX by using the argument
-\texttt{\$\textbackslash{}mathrm\{formula\ here\}\$}, with your formula
-inside the curly brackets. (Notice the use of the backticks here which
-enclose text that acts as code.)
+From Informational Dynamics, we have the following (Dave Braden):
 
-So, \(\mathrm{Fe_2^{2+}Cr_2O_4}\) is written
-\texttt{\$\textbackslash{}mathrm\{Fe\_2\^{}\{2+\}Cr\_2O\_4\}\$}.
+After \emph{n} such encounters the posterior density for \(\theta\) is
 
-\noindent Exponent or Superscript: \(\mathrm{O^-}\)
+\[
+\pi(\theta|X_1< y_1,\dots,X_n<y_n) \varpropto \pi(\theta) \prod_{i=1}^n\int_{-\infty}^{y_i}
+   \exp\left(-{(x-\theta)^2\over{2\sigma^2}}\right)\ dx
+\]
 
-\noindent Subscript: \(\mathrm{CH_4}\)
+Another equation:
 
-To stack numbers or letters as in \(\mathrm{Fe_2^{2+}}\), the subscript
-is defined first, and then the superscript is defined.
+\[
+\det\left|\,\begin{matrix}%
+c_0&c_1\hfill&c_2\hfill&\ldots&c_n\hfill\cr
+c_1&c_2\hfill&c_3\hfill&\ldots&c_{n+1}\hfill\cr
+c_2&c_3\hfill&c_4\hfill&\ldots&c_{n+2}\hfill\cr
+\,\vdots\hfill&\,\vdots\hfill&
+  \,\vdots\hfill&&\,\vdots\hfill\cr
+c_n&c_{n+1}\hfill&c_{n+2}\hfill&\ldots&c_{2n}\hfill\cr
+\end{matrix}\right|>0
+\]
 
-\noindent Bullet: CuCl \(\bullet\) \(\mathrm{7H_{2}O}\)
+\section{Statistics Symbols and
+Expressions}\label{statistics-symbols-and-expressions}
 
-\noindent Delta: \(\Delta\)
+\noindent Exponent or Superscript: \(x^2\)
 
-\noindent Reaction Arrows: \(\longrightarrow\) or
-\(\xrightarrow{solution}\)
+\noindent Subscript: \(x_1, x_2, \dots, x_n\)
 
-\noindent Resonance Arrows: \(\leftrightarrow\)
+\noindent Both combined: \(x_1^{k+1}\).
 
-\noindent Reversible Reaction Arrows: \(\rightleftharpoons\)
+\noindent Our favorite Greeks: \(\sigma\), \(\epsilon\), \(\mu\)
 
-\subsection{Typesetting reactions}\label{typesetting-reactions}
+\noindent Defining a normally distributed random variable:
+\(X\sim N(\mu, \sigma)\)
 
-You may wish to put your reaction in an equation environment, which
-means that LaTeX will place the reaction where it fits and will number
-the equations for you.
-\begin{equation}
-  \mathrm{C_6H_{12}O_6  + 6O_2} \longrightarrow \mathrm{6CO_2 + 6H_2O}
-  \label{eq:reaction}
-\end{equation}
-We can reference this combustion of glucose reaction via Equation
-\eqref{eq:reaction}.
+How do we compute sample variance again?
 
-\subsection{Other examples of
-reactions}\label{other-examples-of-reactions}
+\[s^2 = \frac{\sum_{i=1}^n (x_i-\bar x)^2}{n-1}\]
 
-\(\mathrm{NH_4Cl_{(s)}}\) \(\rightleftharpoons\)
-\(\mathrm{NH_{3(g)}+HCl_{(g)}}\)
+Sometimes you'll need to consider asymptotics, that is, what happens as
+\(n\rightarrow \infty\).
 
-\noindent \(\mathrm{MeCH_2Br + Mg}\) \(\xrightarrow[below]{above}\)
-\(\mathrm{MeCH_2\bullet Mg \bullet Br}\)
+\section{Additional information}\label{additional-information}
 
-\section{Physics}\label{physics}
-
-Many of the symbols you will need can be found on the math page
-\url{http://web.reed.edu/cis/help/latex/math.html} and the Comprehensive
-LaTeX Symbol Guide
+Many of the symbols you will need can be found on Reed College's math
+page \url{http://web.reed.edu/cis/help/latex/math.html} and the
+Comprehensive LaTeX Symbol Guide
 (\url{http://mirror.utexas.edu/ctan/info/symbols/comprehensive/symbols-letter.pdf}).
-
-\section{Biology}\label{biology}
-
-You will probably find the resources at
-\url{http://www.lecb.ncifcrf.gov/~toms/latex.html} helpful, particularly
-the links to bsts for various journals. You may also be interested in
-TeXShade for nucleotide typesetting
-(\url{http://homepages.uni-tuebingen.de/beitz/txe.html}). Be sure to
-read the proceeding chapter on graphics and tables.
 
 \chapter{Tables, Graphics, References, and Labels}\label{ref-labels}
 
@@ -771,13 +759,13 @@ are given in the R Markdown file (not shown in the knitted document).
 \end{Highlighting}
 \end{Shaded}
 \begin{figure}
-\includegraphics[width=6.58in]{figure/amherst} \caption{Amherst logo}\label{fig:reedlogo}
+\includegraphics[width=6.58in]{figure/amherst} \caption{Amherst logo}\label{fig:amherstlogo}
 \end{figure}
-Here is a reference to the Amherst logo: Figure \ref{fig:reedlogo}. Note
-the use of the \texttt{fig:} code here. By naming the \textbf{R} chunk
-that contains the figure, we can then reference that figure later as
-done in the first sentence here. We can also specify the caption for the
-figure via the R chunk option \texttt{fig.cap}.
+Here is a reference to the Amherst logo: Figure \ref{fig:amherstlogo}.
+Note the use of the \texttt{fig:} code here. By naming the \textbf{R}
+chunk that contains the figure, we can then reference that figure later
+as done in the first sentence here. We can also specify the caption for
+the figure via the R chunk option \texttt{fig.cap}.
 
 \clearpage 
 
@@ -834,8 +822,10 @@ As another example, here is a reference: Figure \ref{fig:subd2}.
 You might want to footnote something.\footnote{footnote text} The
 footnote will be in a smaller font and placed appropriately. Endnotes
 work in much the same way. More information can be found about both on
-the CUS site or feel free to reach out to
-\href{mailto:data@reed.edu}{\nolinkurl{data@reed.edu}}.
+the Reed Thesis site
+\url{https://www.reed.edu/cis/help/latex/thesis.html} or feel free to
+reach out to Prof.~Bailey at
+\href{mailto:bebailey@amherst.edu}{\nolinkurl{bebailey@amherst.edu}}.
 
 \section{Bibliographies}\label{bibliographies}
 
@@ -843,10 +833,10 @@ Of course you will need to cite things, and you will probably accumulate
 an armful of sources. There are a variety of tools available for
 creating a bibliography database (stored with the .bib extension). In
 addition to BibTeX suggested below, you may want to consider using the
-free and easy-to-use tool called Zotero. The Reed librarians have
+free and easy-to-use tool called Zotero. The Amherst librarians have
 created Zotero documentation at
-\url{http://libguides.reed.edu/citation/zotero}. In addition, a tutorial
-is available from Middlebury College at
+\url{https://www.amherst.edu/library/find/citation/zotero}. In addition,
+a tutorial is available from Middlebury College at
 \url{http://sites.middlebury.edu/zoteromiddlebury/}.
 
 \emph{R Markdown} uses \emph{pandoc} (\url{http://pandoc.org/}) to build
@@ -862,7 +852,8 @@ You can call this file something else if you like (look at the YAML
 header in the main .Rmd file) and, by default, is to placed in the
 \texttt{bib} folder.
 
-For more information about BibTeX and bibliographies, see our CUS site
+For more information about BibTeX and bibliographies, see the Reed
+College CUS site
 (\url{http://web.reed.edu/cis/help/latex/index.html})\footnote{Reed~College
   (2007)}. There are three pages on this topic: \emph{bibtex} (which
 talks about using BibTeX, at
@@ -912,10 +903,9 @@ file into the csl folder.
 \section{Anything else?}\label{anything-else}
 
 If you'd like to see examples of other things in this template, please
-contact the Data @ Reed team (email
-\href{mailto:data@reed.edu}{\nolinkurl{data@reed.edu}}) with your
-suggestions. We love to see people using \emph{R Markdown} for their
-theses, and are happy to help.
+contact Professor Bailey (email
+\href{mailto:bebailey@amherst.edu}{\nolinkurl{bebailey@amherst.edu}})
+with your suggestions.
 
 \chapter*{Conclusion}\label{conclusion}
 \addcontentsline{toc}{chapter}{Conclusion}

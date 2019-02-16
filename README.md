@@ -28,7 +28,7 @@ install.packages("bookdown")
 devtools::install_github("Amherst-Statistics/thesisdown")
 ```
 
-3. Use the **New R Markdown** dialog to select **AC Stat Comps/Thesis** (note that this will currently only **Knit** if you name the directory `index` as shown below):
+3. Use the **New R Markdown** dialog to select **AC Stat Comps/Thesis** (note that this will currently only **Knit** if you name the primary .Rmd file `index` as shown below):
 
     ![New R Markdown](thesis_rmd.png)
     
