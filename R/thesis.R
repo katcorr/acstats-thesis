@@ -24,7 +24,7 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
     ...)
 
   # Mostly copied from knitr::render_sweave
-  base$knitr$opts_chunk$comment <- NA
+  base$knitr$opts_chunk$comment <- "\t"
   #base$knitr$opts_chunk$fig.align <- "center"
 
   old_opt <- getOption("bookdown.post.latex")
@@ -58,7 +58,7 @@ thesis_gitbook <- function(...){
   )
 
   # Mostly copied from knitr::render_sweave
-  base$knitr$opts_chunk$comment <- NA
+  base$knitr$opts_chunk$comment <- "\t"
   base$knitr$opts_chunk$fig.align <- "center"
 
   base

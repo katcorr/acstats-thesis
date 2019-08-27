@@ -1,13 +1,13 @@
 ---
+title: 'My amazing  title'
 author: 'Your R. Name'
-date: 'May 20xx'
+date: 'May XX, 20XX'
 institution: 'Amherst College'
 advisor: 'Advisor F. Name'
-#altadvisor: 'Your Other Advisor'
+altadvisor: 'Your Other Advisor'
 # Delete line 6 if you only have one advisor
 department: 'Mathematics and Statistics'
 degree: 'Bachelor of Arts'
-title: 'My Comprehensive Evaluation Report'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
@@ -31,7 +31,7 @@ csl: csl/apa.csl
 # Download your specific csl file and refer to it in the line above.
 lot: true
 lof: true
-#space_between_paragraphs: true
+# space_between_paragraphs: true
 # Delete the # at the beginning of the previous line if you'd like
 # to have a blank new line between each paragraph
 #header-includes:

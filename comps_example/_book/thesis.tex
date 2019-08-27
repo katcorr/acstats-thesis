@@ -1,5 +1,5 @@
 % This is the Amherst College Thesis and Comprehensive Evaluation
-% LaTeX template. Brittney E. Bailey adapted this template from the 
+% LaTeX template. Brittney E. Bailey adapted this template from the
 % Reed College LaTeX thesis template in January 2019. Most of the work
 % for the document class was done by Sam Noble (SN), as well as this
 % template. Later comments etc. by Ben Salzberg (BTS). Additional
@@ -109,16 +109,17 @@
   \newcommand{\NormalTok}[1]{#1}
 
 % To pass between YAML and LaTeX the dollar signs are added by CII
-\title{My Comprehensive Evaluation Report}
+\title{My amazing title}
 \author{Your R. Name}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{May 20xx}
+\date{May XX, 20XX}
 \division{}
 \advisor{Advisor F. Name}
 \institution{Amherst College}
 \degree{Bachelor of Arts}
 %If you have two advisors for some reason, you can use the following
 % Uncommented out by CII
+\altadvisor{Your Other Advisor}
 % End of CII addition
 
 %%% Remember to use the correct department!
@@ -180,22 +181,16 @@ Second paragraph of abstract starts here.
 %
 \begin{document}
 
+\doublespace
 % Everything below added by CII
   \maketitle
 
 \frontmatter % this stuff will be roman-numbered
-\pagestyle{empty} % this removes page numbers from the frontmatter
-  \begin{acknowledgements}
-    I want to thank a few people.
-  \end{acknowledgements}
 
-  \hypersetup{linkcolor=black}
-  \setcounter{tocdepth}{2}
-  \tableofcontents
+\pagenumbering{roman}
+\pagestyle{fancyplain}
+%\pagestyle{fancy} % this removes page numbers from the frontmatter
 
-  \listoftables
-
-  \listoffigures
   \begin{abstract}
     The preface pretty much says it all. \par
     
@@ -204,7 +199,21 @@ Second paragraph of abstract starts here.
   \begin{dedication}
     You can have a dedication here if you wish.
   \end{dedication}
+  \begin{acknowledgements}
+    I want to thank a few people.
+  \end{acknowledgements}
+
+  \hypersetup{linkcolor=black}
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+
+  \addcontentsline{toc}{chapter}{List of Tables}\listoftables
+
+  \addcontentsline{toc}{chapter}{List of Figures}\listoffigures
+
+
 \mainmatter % here the regular arabic numbering starts
+\pagenumbering{arabic}
 \pagestyle{fancyplain} % turns page numbering back on
 
 \chapter*{Introduction}\label{introduction}
@@ -346,13 +355,13 @@ dataset):
 \end{Highlighting}
 \end{Shaded}
 \begin{verbatim}
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
+          speed           dist       
+      Min.   : 4.0   Min.   :  2.00  
+      1st Qu.:12.0   1st Qu.: 26.00  
+      Median :15.0   Median : 36.00  
+      Mean   :15.4   Mean   : 42.98  
+      3rd Qu.:19.0   3rd Qu.: 56.00  
+      Max.   :25.0   Max.   :120.00
 \end{verbatim}
 \section{Inline code}\label{inline-code}
 
@@ -429,7 +438,7 @@ dimensions (rows by columns) and also the names of the columns.
 \end{Highlighting}
 \end{Shaded}
 \begin{verbatim}
-[1] 52808    16
+     [1] 52808    16
 \end{verbatim}
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -437,10 +446,10 @@ dimensions (rows by columns) and also the names of the columns.
 \end{Highlighting}
 \end{Shaded}
 \begin{verbatim}
- [1] "month"        "day"          "dep_time"     "dep_delay"   
- [5] "arr_time"     "arr_delay"    "carrier"      "tailnum"     
- [9] "flight"       "dest"         "air_time"     "distance"    
-[13] "hour"         "minute"       "carrier_name" "dest_name"   
+      [1] "month"        "day"          "dep_time"     "dep_delay"   
+      [5] "arr_time"     "arr_delay"    "carrier"      "tailnum"     
+      [9] "flight"       "dest"         "air_time"     "distance"    
+     [13] "hour"         "minute"       "carrier_name" "dest_name"
 \end{verbatim}
 Another good idea is to take a look at the dataset in table form. With
 this dataset having more than 50,000 rows, we won't explicitly show the
@@ -551,8 +560,8 @@ the arrival delay of 1539 minutes for American in our original
 \end{Highlighting}
 \end{Shaded}
 \begin{verbatim}
-  dep_time dep_delay arr_time tailnum flight dest air_time distance
-1     1403      1553     1934  N595AA   1568  DFW      182     1616
+       dep_time dep_delay arr_time tailnum flight dest air_time distance
+     1     1403      1553     1934  N595AA   1568  DFW      182     1616
 \end{verbatim}
 We see that the flight occurred on March 3rd and departed a little after
 2 PM on its way to Dallas/Fort Worth. Lastly, we show how we can

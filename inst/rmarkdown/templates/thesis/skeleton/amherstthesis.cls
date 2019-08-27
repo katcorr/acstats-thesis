@@ -24,11 +24,12 @@
 %
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{amherstthesis}[2019/01/15 Amherst College Statistics]
+\ProvidesClass{amherstthesis}[2019/08/26 Amherst College Statistics]
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ProcessOptions\relax
 \LoadClass{book}
 \RequirePackage{fancyhdr}
+\usepackage{setspace}
 % Added by CII to produce nice looking code in BeginVerbatimEnvironment
 \RequirePackage{fancyvrb}
 
@@ -104,15 +105,8 @@
 % This gives us rules below the headers
 \AtBeginDocument{%
   \fancyhf{}
-  \fancyhead[LE,RO]{\thepage}
-%  \fancyhead[RE]{\slshape \leftmark}
-%  \fancyhead[LO]{\slshape \rightmark}
-%	The above makes your headers in all caps. If you would like different headers, choose one of the following options (be sure to remove the % symbol from both the right and left headers):
-	 \fancyhead[RE]{\slshape \nouppercase \leftmark} % This makes the headers on the RIGHT side pages be italic and use lowercase With Capitals When Specified.
-	\fancyhead[LO]{\slshape \nouppercase \rightmark} % This does the same thing to the LEFT side pages
-%	or
-%	\fancyhead[RE]{\scshape \leftmark} % The RIGHT headers will be in small caps.
-%	\fancyhead[LO]{\scshape \rightmark} %  And so will the LEFT headers
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[c]{\thepage}
   \pagestyle{fancy}
 
 % Psych majors: You do not need the following six lines, as it conflicts with apacite, so comment them out.
@@ -136,7 +130,7 @@
 \let\RToldchapter\chapter
 \renewcommand{\chapter}{\if@openright\RTcleardoublepage
 		    \else\clearpage\fi
-		    \thispagestyle{empty}%
+		    %\thispagestyle{empty}%
 		    \global\@topnum\z@
 		    \@afterindentfalse
 		    \secdef\@chapter\@schapter}
@@ -204,7 +198,7 @@
 \def\major#1{\gdef \@major{#1}}
 \def\@major{\@latex@warning@no@line{No \noexpand\major given}}
 \def\thedepartmentof#1{\gdef \@thedepartmentof{#1}}
-\def\@thedepartmentof{The Department of}
+\def\@thedepartmentof{the \\ Department of}
 \def\approvedforthe#1{\gdef \@approvedforthe{#1}}
 \def\@approvedforthe{Major}
 \def\advisor#1{\gdef \@advisor{#1}}
@@ -239,7 +233,7 @@
   \else
     \@restonecolfalse
   \fi
-  \chapter*{Acknowledgements}
+  \chapter*{Acknowledgements}\addcontentsline{toc}{chapter}{Acknowledgements}
   \fontsize{12}{14}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
 
@@ -249,7 +243,7 @@
   \else
     \@restonecolfalse
   \fi
-  \chapter*{Preface}
+  \chapter*{Preface}\addcontentsline{toc}{chapter}{Preface}
   \fontsize{12}{14}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
 % End of CII add
@@ -260,7 +254,7 @@
   \else
     \@restonecolfalse
   \fi
-  \chapter*{Abstract}
+  \chapter*{Abstract}\addcontentsline{toc}{chapter}{Abstract}
   \fontsize{12}{14}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
 
@@ -270,21 +264,19 @@
   \else
     \@restonecolfalse
   \fi
-  \chapter*{Dedication}
+  \chapter*{Dedication}\addcontentsline{toc}{chapter}{Dedication}
   \fontsize{12}{14}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
 
 
 \ifx\@pdfoutput\@undefined
   \newcommand{\RTpercent}{\@percentchar\space}
-  \AtBeginDvi{\special{!\RTpercent Amherst College LaTeX Thesis Class 2019/01/15 BEB}}
-  \AtBeginDvi{\special{rawpostscript \RTpercent Amherst College LaTeX Thesis Class 2019/01/15 BEB}}
+  \AtBeginDvi{\special{!\RTpercent Amherst College LaTeX Thesis Class 2019/08/26 BEB}}
+  \AtBeginDvi{\special{rawpostscript \RTpercent Amherst College LaTeX Thesis Class 2019/08/26 BEB}}
 \else
-  \AtEndDocument{\pdfinfo{/Creator	(Amherst College LaTeX Thesis Class 2019/01/15 BEB)}}
+  \AtEndDocument{\pdfinfo{/Creator	(Amherst College LaTeX Thesis Class 2019/08/26 BEB)}}
 \fi
 
-% I hacked the title page to all be the same font size
-% as requested by the library, BTS 2005
 
 \renewcommand{\maketitle}{%
   {\pagestyle{empty}
@@ -301,31 +293,39 @@
   \begin{center}
     \setcounter{page}{1}
     \null\vfil
-    {\fontsize{12}{14}\selectfont \@title}
+    {\fontsize{18}{20}\selectfont \@title}\\
+    \bigskip
+    \textit{\@author}\\
+    \bigskip
+    \@date \\
     \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+    %\centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \vfil
-    A Comprehensive Evaluation Report \\
-    Presented to \\
+    %A Comprehensive Evaluation Report \\
+    Submitted to
     \@thedepartmentof \ \@department \\
-    \@institution
+    of \@institution \
+    in partial fulfillment \\
+    of the requirements for the degree \\
+    \@degree .\\
+
     \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+    %\centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
+    %\bigskip
+    %\centerline{}
+	 \if@altadvisor
+    	Advisors:\\
+	\else
+	   Advisor: \\
+	 \fi
+    	\textit{\@advisor} \\
+    	\if@altadvisor
+    	\textit{\@altadvisor} \\
+		\fi
+
+
     \vfil
-    In Partial Fulfillment \\
-    of the Requirements for the Degree \\
-    \@degree
-    \vfil
-    \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
-    \bigskip
-    \centerline{}
-    \bigskip
-    {\fontsize{12}{14}\selectfont \lineskip .75em
-    \begin{tabular}[t]{c}%
-      \@author
-    \end{tabular}\par}
-    \vskip 1.5em
-    {\fontsize{12}{14}\selectfont \@date \par}
+
   \end{center}\par
   \end{titlepage}
 
@@ -344,7 +344,7 @@
 %   \centerline{\makebox[\wd0][c]{\@advisor}
 % 	\if@altadvisor \makebox[.5in]{} \makebox[\wd0][c]{\@altadvisor} \fi}
 %   \par\vfil\null}
-   \cleardoublepage
+   %\cleardoublepage
   }
 }
 

@@ -1,5 +1,5 @@
 % This is the Amherst College Thesis and Comprehensive Evaluation
-% LaTeX template. Brittney E. Bailey adapted this template from the 
+% LaTeX template. Brittney E. Bailey adapted this template from the
 % Reed College LaTeX thesis template in January 2019. Most of the work
 % for the document class was done by Sam Noble (SN), as well as this
 % template. Later comments etc. by Ben Salzberg (BTS). Additional
@@ -152,13 +152,30 @@ $endfor$
 
 \begin{document}
 
+\doublespace
 % Everything below added by CII
 $if(title)$
   \maketitle
 $endif$
 
 \frontmatter % this stuff will be roman-numbered
-\pagestyle{empty} % this removes page numbers from the frontmatter
+
+\pagenumbering{roman}
+\pagestyle{fancyplain}
+%\pagestyle{fancy} % this removes page numbers from the frontmatter
+
+
+$if(abstract)$
+  \begin{abstract}
+    $abstract$
+  \end{abstract}
+$endif$
+
+$if(dedication)$
+  \begin{dedication}
+    $dedication$
+  \end{dedication}
+$endif$
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -179,26 +196,16 @@ $if(toc)$
 $endif$
 
 $if(lot)$
-  \listoftables
+  \addcontentsline{toc}{chapter}{List of Tables}\listoftables
 $endif$
 
 $if(lof)$
-  \listoffigures
+  \addcontentsline{toc}{chapter}{List of Figures}\listoffigures
 $endif$
 
-$if(abstract)$
-  \begin{abstract}
-    $abstract$
-  \end{abstract}
-$endif$
-
-$if(dedication)$
-  \begin{dedication}
-    $dedication$
-  \end{dedication}
-$endif$
 
 \mainmatter % here the regular arabic numbering starts
+\pagenumbering{arabic}
 \pagestyle{fancyplain} % turns page numbering back on
 
 $body$
