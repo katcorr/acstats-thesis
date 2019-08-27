@@ -58,11 +58,48 @@
 \def\sectionautorefname{Section}
 \def\subsectionautorefname{Subsection}
 % End of CII addition
-
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 % Added by CII
 \usepackage{caption}
 \captionsetup{width=5in}
 % End of CII addition
+
+\usepackage{titlesec}
+
+% \titleformat{⟨command⟩}[⟨shape⟩]{⟨format⟩}{⟨label⟩}{⟨sep⟩}{⟨before-code⟩}[⟨after-code⟩]
+\titleformat{\chapter}[hang]
+{\normalfont%
+    \Large% %change this size to your needs for the first line
+    \bfseries}{\chaptertitlename\ \thechapter}{20pt}{%
+     %change this size to your needs for the second line
+    }[]
+
+\titleformat{\section}[hang]
+{\normalfont%
+    \large % %change this size to your needs for the first line
+    \bfseries}{\thesection}{20pt}{%
+     %change this size to your needs for the second line
+    }[]
+
+\titleformat{\subsection}[hang]
+{\normalfont%
+    \normalsize % %change this size to your needs for the first line
+    \bfseries}{\thesubsection}{15pt}{%
+     %change this size to your needs for the second line
+    }[]
+
+% \titleformat{\section}[display]
+% {\normalfont%
+%     \large% %change this size to your needs for the first line
+%     \bfseries}{\chaptertitlename\ \thechapter}{20pt}{%
+%     \normalsize %change this size to your needs for the second line
+%     }
 
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
@@ -594,6 +631,16 @@ March 3rd against time of departure.
 Science}\label{math-sci}}
 
 \hypertarget{math}{\section{Math}\label{math}}
+
+\TeX~is the best way to typeset mathematics. Donald Knuth designed
+\TeX~when he got frustrated at how long it was taking the typesetters to
+finish his book, which contained a lot of mathematics. One nice feature
+of \emph{R Markdown} is its ability to read LaTeX code directly.
+
+\TeX~is the best way to typeset mathematics. Donald Knuth designed
+\TeX~when he got frustrated at how long it was taking the typesetters to
+finish his book, which contained a lot of mathematics. One nice feature
+of \emph{R Markdown} is its ability to read LaTeX code directly.
 
 \TeX~is the best way to typeset mathematics. Donald Knuth designed
 \TeX~when he got frustrated at how long it was taking the typesetters to

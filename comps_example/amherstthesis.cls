@@ -293,7 +293,7 @@
   \begin{center}
     \setcounter{page}{1}
     \null\vfil
-    {\fontsize{18}{20}\selectfont \@title}\\
+    {\fontsize{24}{26}\selectfont \@title}\\
     \bigskip
     \textit{\@author}\\
     \bigskip
