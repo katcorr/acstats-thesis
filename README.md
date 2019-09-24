@@ -1,4 +1,4 @@
-# thesisdown
+# acstats-thesis
 
 This project was inspired by the [bookdown](http://github.com/rstudio/bookdown) package and is an updated version of Chester Ismay's Senior Thesis template in the `reedtemplates` package [here](http://github.com/ismayc/reedtemplates). 
 
