@@ -12,15 +12,15 @@ The current output for the two versions are here:
 
 Under the hood, the Amherst College LaTeX template is used to ensure that documents conform precisely to [submission standards](https://www.amherst.edu/academiclife/registrar/for-students/thesis_guide). At the same time, composition and formatting can be done using lightweight [markdown](http://rmarkdown.rstudio.com/authoring_basics.html) syntax, and **R** code and its output can be seamlessly included using [rmarkdown](http://rmarkdown.rstudio.com).
 
-### Using thesisdown from Amherst-Statistics GitHub
+### Using acstats-thesis from Amherst-Statistics GitHub
 
-Using **thesisdown** has some prerequisites which are described below. To compile PDF documents using **R**, you need to have LaTeX installed.  It can be downloaded for Windows at <http://http://miktex.org/download> and for Mac at <http://tug.org/mactex/mactex-download.html>.  Follow the instructions to install the necessary packages after downloading the (somewhat large) installer files.  You may need to install a few extra LaTeX packages on your first attempt to knit as well.
+Using **acstats-thesis** has some prerequisites which are described below. To compile PDF documents using **R**, you need to have LaTeX installed.  It can be downloaded for Windows at <http://http://miktex.org/download> and for Mac at <http://tug.org/mactex/mactex-download.html>.  Follow the instructions to install the necessary packages after downloading the (somewhat large) installer files.  You may need to install a few extra LaTeX packages on your first attempt to knit as well.
 
-To use **thesisdown** from RStudio:
+To use **acstats-thesis** from RStudio:
 
 1. Install the latest [RStudio](http://www.rstudio.com/products/rstudio/download/).
 
-2. Install the **bookdown** and **thesisdown** packages: 
+2. Install the **bookdown** and **acstats-thesis** packages: 
 
 ```
 install.packages("devtools")
