@@ -20,7 +20,7 @@ To use **acstats-thesis** from RStudio:
 
 1. Install the latest [RStudio](http://www.rstudio.com/products/rstudio/download/).
 
-2. Install the **bookdown** and **acstats-thesis** packages: 
+2. Install the **bookdown** and **acstats-thesis** packages (if you are on the server, do **NOT** update any of the packages if it prompts you to--hit Enter or choose the `3: None` to avoid the package updates): 
 
 ```
 install.packages("devtools")
