@@ -25,7 +25,7 @@ To use **thesisdown** from RStudio:
 ```
 install.packages("devtools")
 install.packages("bookdown")
-devtools::install_github("Amherst-Statistics/thesisdown")
+devtools::install_github("Amherst-Statistics/acstats-thesis")
 ```
 
 3. Use the **New R Markdown** dialog to select **AC Stat Comps/Thesis** (note that this will currently only **Knit** if you name the primary .Rmd file `index` as shown below):
