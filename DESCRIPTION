@@ -1,5 +1,5 @@
 Package: acthesis
-Title: An updated R Markdown thesis template using the bookdown package
+Title: Template for thesis writers in Statistics at Amherst College
 Version: 0.0.1
 Authors@R: c(
     person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "aut"),

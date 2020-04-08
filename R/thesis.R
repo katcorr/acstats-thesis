@@ -11,7 +11,7 @@
 #'   template
 #' @examples
 #' \dontrun{
-#'  output: thesisdown::thesis_pdf
+#'  output: acthesis::thesis_pdf
 #' }
 thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 
@@ -25,6 +25,8 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 
   # Mostly copied from knitr::render_sweave
   base$knitr$opts_chunk$comment <- "\t"
+  base$knitr$opts_chunk$size <- 9
+
   #base$knitr$opts_chunk$fig.align <- "center"
 
   old_opt <- getOption("bookdown.post.latex")

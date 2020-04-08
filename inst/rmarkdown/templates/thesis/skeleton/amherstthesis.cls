@@ -272,10 +272,10 @@
 
 \ifx\@pdfoutput\@undefined
   \newcommand{\RTpercent}{\@percentchar\space}
-  \AtBeginDvi{\special{!\RTpercent Amherst College LaTeX Thesis Class 2019/08/26 BEB}}
-  \AtBeginDvi{\special{rawpostscript \RTpercent Amherst College LaTeX Thesis Class 2019/08/26 BEB}}
+  \AtBeginDvi{\special{!\RTpercent Amherst College LaTeX Thesis Class April 2020 BEB}}
+  \AtBeginDvi{\special{rawpostscript \RTpercent Amherst College LaTeX Thesis Class April 2020 BEB}}
 \else
-  \AtEndDocument{\pdfinfo{/Creator	(Amherst College LaTeX Thesis Class 2019/08/26 BEB)}}
+  \AtEndDocument{\pdfinfo{/Creator	(Amherst College LaTeX Thesis Class April 2020 BEB)}}
 \fi
 
 

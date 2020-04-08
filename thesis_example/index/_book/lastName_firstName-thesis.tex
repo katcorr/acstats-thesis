@@ -329,39 +329,6 @@ figures, automatically generate a table of contents, index, references,
 table of figures, etc. should make it of great benefit to nearly anyone
 writing a thesis project.
 
-\section{First numbered section}\label{first-numbered-section}
-
-Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah
-blah. Lorem ipsum blah blah blah.
-
-\subsection{Numbered Subsection}\label{numbered-subsection}
-
-Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah.
-
-\subsubsection{Subsubsections do not have
-numbers}\label{subsubsections-do-not-have-numbers}
-
-Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah.
-
-\paragraph{Paragraphs start in line with subsubsubsection
-headers.}\label{paragraphs-start-in-line-with-subsubsubsection-headers.}
-
-Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah.
-
-\subparagraph{How deep can this go?}\label{how-deep-can-this-go}
-
-Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah.
-
 \hypertarget{rmd-basics}{\chapter{R Markdown Basics}\label{rmd-basics}}
 
 Here is a brief introduction into using \emph{R Markdown}.
@@ -490,7 +457,7 @@ You can also embed plots. For example, here is a way to use the base
 \textbf{R} graphics package to produce a plot using the built-in
 \texttt{pressure} dataset:
 
-\includegraphics{thesis_files/figure-latex/pressure-1.pdf}
+\includegraphics{lastName_firstName-thesis_files/figure-latex/pressure-1.pdf}
 
 Note that the \texttt{echo=FALSE} parameter was added to the code chunk
 to prevent printing of the \textbf{R} code that generated the plot.
@@ -562,40 +529,6 @@ created a few examples of using \texttt{dplyr} to get information about
 the Portland flights in 2014. You will also see the use of the
 \texttt{ggplot2} package, which produces beautiful, high-quality
 academic visuals.
-
-We begin by checking to ensure that needed packages are installed and
-then we load them into our current working environment:
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{# List of packages required for this analysis}
-\NormalTok{pkg <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"dplyr"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"knitr"}\NormalTok{, }\StringTok{"bookdown"}\NormalTok{, }\StringTok{"devtools"}\NormalTok{)}
-\CommentTok{# Check if packages are not installed and assign the}
-\CommentTok{# names of the packages not installed to the variable new.pkg}
-\NormalTok{new.pkg <-}\StringTok{ }\NormalTok{pkg[}\OperatorTok{!}\NormalTok{(pkg }\OperatorTok{%in%}\StringTok{ }\KeywordTok{installed.packages}\NormalTok{())]}
-\CommentTok{# If there are any packages in the list that aren't installed,}
-\CommentTok{# install them}
-\ControlFlowTok{if}\NormalTok{ (}\KeywordTok{length}\NormalTok{(new.pkg))}
-  \KeywordTok{install.packages}\NormalTok{(new.pkg, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
-\CommentTok{# Load packages (thesisdown will load all of the packages as well)}
-\KeywordTok{library}\NormalTok{(thesisdown)}
-\end{Highlighting}
-\end{Shaded}
-\begin{verbatim}
-     Warning: package 'remotes' was built under R version 3.5.2
-\end{verbatim}
-\begin{verbatim}
-     Warning: package 'dplyr' was built under R version 3.5.2
-\end{verbatim}
-\begin{verbatim}
-     Warning: package 'ggplot2' was built under R version 3.5.2
-\end{verbatim}
-\begin{verbatim}
-     Warning: package 'bookdown' was built under R version 3.5.2
-\end{verbatim}
-\begin{verbatim}
-     Warning: package 'knitr' was built under R version 3.5.2
-\end{verbatim}
-\clearpage
 
 The example we show here does the following:
 \begin{itemize}
@@ -682,7 +615,7 @@ March 3rd against time of departure.
 \StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ dep_time, }\DataTypeTok{y =}\NormalTok{ arr_delay)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_point}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
-\includegraphics{thesis_files/figure-latex/march3plot-1.pdf}
+\includegraphics{lastName_firstName-thesis_files/figure-latex/march3plot-1.pdf}
 
 \section{Additional resources}\label{additional-resources}
 \begin{itemize}
@@ -904,7 +837,7 @@ parameter which is discussed on the next page.
 \end{Shaded}
 \begin{figure}
 \centering
-\includegraphics{thesis_files/figure-latex/delaysboxplot-1.pdf}
+\includegraphics{lastName_firstName-thesis_files/figure-latex/delaysboxplot-1.pdf}
 \caption{\label{fig:delaysboxplot}Mean Delays by Airline}
 \end{figure}
 Here is a reference to this image: Figure \ref{fig:delaysboxplot}.
@@ -1052,10 +985,9 @@ chunk tag) to help with readibility and/or setup.
 \begin{Highlighting}[]
 \CommentTok{# if you like to load your packages all at once}
 \CommentTok{# this is a good place to do it!}
+\KeywordTok{library}\NormalTok{(acthesis) }\CommentTok{# loads dpylr, ggplot2, knitr, bookdown, and remotes}
 \end{Highlighting}
 \end{Shaded}
-\textbf{In Chapter \ref{ref-labels}:}
-
 \chapter{The Second Appendix, for
 Fun}\label{the-second-appendix-for-fun}
 

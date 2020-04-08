@@ -12,8 +12,8 @@ degree: 'Bachelor of Arts'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-  thesisdown::thesis_pdf: default
-#  thesisdown::thesis_gitbook: default
+  acthesis::thesis_pdf: default
+#  acthesis::thesis_gitbook: default
 # include table of contents, list of tables, list of figures
 toc: true
 lot: true # set to false if no tables present
@@ -61,6 +61,7 @@ PDF files and also delete the # before rmd_files: there.
 ```{r include_packages, include = FALSE}
 # if you like to load your packages all at once
 # this is a good place to do it!
+library(acthesis) # loads dpylr, ggplot2, knitr, bookdown, and remotes
 ```
 
 

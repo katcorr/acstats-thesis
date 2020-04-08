@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 APR 2020 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 APR 2020 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**thesis.tex
-(./thesis.tex
+**lastName_firstName-thesis.tex
+(./lastName_firstName-thesis.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./amherstthesis.cls
@@ -594,8 +594,8 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidth=\dimen146
 \titlewidthlast=\dimen147
 \titlewidthfirst=\dimen148
-) (./thesis.aux)
-\openout1 = `thesis.aux'.
+) (./lastName_firstName-thesis.aux)
+\openout1 = `lastName_firstName-thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 247.
 LaTeX Font Info:    ... okay on input line 247.
@@ -675,17 +675,17 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 247.
 LaTeX Info: Redefining \pageref on input line 247.
 LaTeX Info: Redefining \nameref on input line 247.
-(./thesis.out) (./thesis.out)
+(./lastName_firstName-thesis.out) (./lastName_firstName-thesis.out)
 \@outlinefile=\write4
-\openout4 = `thesis.out'.
+\openout4 = `lastName_firstName-thesis.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 [1
 Non-PDF special ignored!
-<special> !% Amherst College LaTeX Thesis Class 2019/08/26 BEB
+<special> !% Amherst College LaTeX Thesis Class April 2020 BEB
 Non-PDF special ignored!
-<special> rawpostscript % Amherst College LaTeX Thesis Class 2019/08/26 BEB
+<special> rawpostscript % Amherst College LaTeX Thesis Class April 2020 BEB
 
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
@@ -701,7 +701,7 @@ Non-PDF special ignored!
 ] [5] [6
 
 
-] (./thesis.toc
+] (./lastName_firstName-thesis.toc
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 1.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -741,19 +741,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [7])
 \tf@toc=\write5
-\openout5 = `thesis.toc'.
+\openout5 = `lastName_firstName-thesis.toc'.
 
-[8] (./thesis.lot)
+[8] (./lastName_firstName-thesis.lot)
 \tf@lot=\write6
-\openout6 = `thesis.lot'.
+\openout6 = `lastName_firstName-thesis.lot'.
 
 [9
 
 ] [10
 
-] (./thesis.lof)
+] (./lastName_firstName-thesis.lof)
 \tf@lof=\write7
-\openout7 = `thesis.lof'.
+\openout7 = `lastName_firstName-thesis.lof'.
 
 [11] [12
 
@@ -773,167 +773,164 @@ been already used, duplicate ignored
 l.319 
        [1
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.344 
-       [2] [3] [4
-
-]
+l.332 ...ter{R Markdown Basics}\label{rmd-basics}}
+                                                   [2]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 372.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 339.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 387.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 354.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [5] [6]
+) [3
+
+] [4]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 448.
-[7]
-<thesis_files/figure-latex/pressure-1.pdf, id=284, 434.62375pt x 250.9375pt>
-File: thesis_files/figure-latex/pressure-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/pressure-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/pressure-1.pdf  used on inpu
-t line 493.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 415.
+[5]
+<lastName_firstName-thesis_files/figure-latex/pressure-1.pdf, id=266, 434.62375
+pt x 250.9375pt>
+File: lastName_firstName-thesis_files/figure-latex/pressure-1.pdf Graphic file 
+(type pdf)
+<use lastName_firstName-thesis_files/figure-latex/pressure-1.pdf>
+Package pdftex.def Info: lastName_firstName-thesis_files/figure-latex/pressure-
+1.pdf  used on input line 460.
 (pdftex.def)             Requested size: 434.62268pt x 250.93687pt.
 
-Overfull \hbox (18.6275pt too wide) in paragraph at lines 493--494
+Overfull \hbox (18.6275pt too wide) in paragraph at lines 460--461
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8 <./thesis_files/figure-latex/pressure-1.pdf>] [9]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 575
-.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [10] [11] [12
-
-] [13]
-<thesis_files/figure-latex/march3plot-1.pdf, id=326, 423.5825pt x 206.7725pt>
-File: thesis_files/figure-latex/march3plot-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/march3plot-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/march3plot-1.pdf  used on in
-put line 685.
+[6 <./lastName_firstName-thesis_files/figure-latex/pressure-1.pdf>] [7] [8] [9]
+<lastName_firstName-thesis_files/figure-latex/march3plot-1.pdf, id=295, 423.582
+5pt x 206.7725pt>
+File: lastName_firstName-thesis_files/figure-latex/march3plot-1.pdf Graphic fil
+e (type pdf)
+<use lastName_firstName-thesis_files/figure-latex/march3plot-1.pdf>
+Package pdftex.def Info: lastName_firstName-thesis_files/figure-latex/march3plo
+t-1.pdf  used on input line 618.
 (pdftex.def)             Requested size: 423.58147pt x 206.77199pt.
 
-Overfull \hbox (7.58629pt too wide) in paragraph at lines 685--686
+Overfull \hbox (7.58629pt too wide) in paragraph at lines 618--619
 [][] 
  []
 
-[14 <./thesis_files/figure-latex/march3plot-1.pdf>]
+[10 <./lastName_firstName-thesis_files/figure-latex/march3plot-1.pdf>] [11] [12
+
+]
 Chapter 3.
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 716.
+(amsmath)                 on input line 649.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[13] [14]
+Chapter 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [15
 
 ] [16]
-Chapter 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[17
-
-] [18]
-<figures/amherst.png, id=378, 475.7775pt x 475.7775pt>
+<figures/amherst.png, id=356, 475.7775pt x 475.7775pt>
 File: figures/amherst.png Graphic file (type png)
 <use figures/amherst.png>
-Package pdftex.def Info: figures/amherst.png  used on input line 880.
+Package pdftex.def Info: figures/amherst.png  used on input line 813.
 (pdftex.def)             Requested size: 475.53673pt x 475.55852pt.
 
-Overfull \hbox (41.91673pt too wide) in paragraph at lines 880--880
+Overfull \hbox (41.91673pt too wide) in paragraph at lines 813--813
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+[17
+
+] [18 <./figures/amherst.png>]
+<lastName_firstName-thesis_files/figure-latex/delaysboxplot-1.pdf, id=370, 423.
+5825pt x 313.17pt>
+File: lastName_firstName-thesis_files/figure-latex/delaysboxplot-1.pdf Graphic 
+file (type pdf)
+<use lastName_firstName-thesis_files/figure-latex/delaysboxplot-1.pdf>
+Package pdftex.def Info: lastName_firstName-thesis_files/figure-latex/delaysbox
+plot-1.pdf  used on input line 840.
+(pdftex.def)             Requested size: 423.58147pt x 313.16922pt.
 [19
 
-] [20 <./figures/amherst.png>]
-<thesis_files/figure-latex/delaysboxplot-1.pdf, id=391, 423.5825pt x 313.17pt>
-File: thesis_files/figure-latex/delaysboxplot-1.pdf Graphic file (type pdf)
-<use thesis_files/figure-latex/delaysboxplot-1.pdf>
-Package pdftex.def Info: thesis_files/figure-latex/delaysboxplot-1.pdf  used on
- input line 907.
-(pdftex.def)             Requested size: 423.58147pt x 313.16922pt.
-[21
-
- <./thesis_files/figure-latex/delaysboxplot-1.pdf>] [22]
-<figures/subdivision.pdf, id=410, 220.825pt x 89.33376pt>
+ <./lastName_firstName-thesis_files/figure-latex/delaysboxplot-1.pdf>] [20]
+<figures/subdivision.pdf, id=389, 220.825pt x 89.33376pt>
 File: figures/subdivision.pdf Graphic file (type pdf)
 <use figures/subdivision.pdf>
-Package pdftex.def Info: figures/subdivision.pdf  used on input line 922.
+Package pdftex.def Info: figures/subdivision.pdf  used on input line 855.
 (pdftex.def)             Requested size: 165.61833pt x 67.00014pt.
 File: figures/subdivision.pdf Graphic file (type pdf)
 <use figures/subdivision.pdf>
-Package pdftex.def Info: figures/subdivision.pdf  used on input line 934.
+Package pdftex.def Info: figures/subdivision.pdf  used on input line 867.
 (pdftex.def)             Requested size: 220.82445pt x 89.33353pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 940.
+(Font)              <10> on input line 873.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 940.
+(Font)              <7> on input line 873.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 940.
-[23
+(Font)              <5> on input line 873.
+[21
 
- <./figures/subdivision.pdf>] [24]
+ <./figures/subdivision.pdf>] [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[25] [26] [27
+[23] [24] [25
 
-] [28
+] [26
 
 ]
 Appendix A.
-[29] [30
+[27] [28
 
 ]
 Appendix B.
-[31] [32
+[29] [30
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1104.
-[33
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1036.
+[31
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1104.
-(./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1036.
+(./lastName_firstName-thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1036.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1036.
 
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 02932E453CA64C96BA5A30E2AA1BEDE0;1947.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1104.
+Package rerunfilecheck Info: File `lastName_firstName-thesis.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: 95D7FDDDB8C5301DC59603DEDC88EA8E;1805.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1036.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 249 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11530 strings out of 492649
- 175797 string characters out of 6129622
- 301955 words of memory out of 5000000
- 14959 multiletter control sequences out of 15000+600000
- 75431 words of font info for 125 fonts, out of 8000000 for 9000
+ 11468 strings out of 492649
+ 175289 string characters out of 6129622
+ 301660 words of memory out of 5000000
+ 14908 multiletter control sequences out of 15000+600000
+ 74727 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,49p,268b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,49p,279b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.en
 c}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
 cal/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texliv
@@ -956,10 +953,10 @@ texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist
 m/lmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti10.
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb>
-Output written on thesis.pdf (47 pages, 401674 bytes).
+Output written on lastName_firstName-thesis.pdf (45 pages, 397737 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 527 compressed objects within 6 object streams
- 103 named destinations out of 1000 (max. 500000)
- 12570 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 505 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 12554 words of extra memory for PDF output out of 14400 (max. 10000000)
 
