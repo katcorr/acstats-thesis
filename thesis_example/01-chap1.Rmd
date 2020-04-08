@@ -24,6 +24,7 @@ _R Markdown_ creates a simple and straightforward way to interface with the beau
 
 Anyone who needs to use data analysis, math, tables, a lot of figures, complex cross-references, or who just cares about the final appearance of their document should use _R Markdown_. Of particular use should be anyone in the sciences, but the user-friendly nature of _Markdown_ and its ability to keep track of and easily include figures, automatically generate a table of contents, index, references, table of figures, etc. should make it of great benefit to nearly anyone writing a thesis project.
 
+<<<<<<< HEAD:thesis_example/index/01-chap1.Rmd
 ```{proof myproof, name = "This is a proof"}
 There is a proof environment in which you can create equations
 
@@ -31,3 +32,29 @@ $$
 \hat{\beta}_0 + \hat{\beta}_1x
 $$
 ```
+=======
+
+## First numbered section
+
+Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. 
+
+### Numbered Subsection
+
+Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.
+
+
+#### Subsubsections do not have numbers
+
+Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.
+
+
+##### Paragraphs start in line with subsubsubsection headers.
+
+Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.
+
+
+
+###### How deep can this go?
+
+Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.
+>>>>>>> parent of e92eb33... Working thesis doc!:thesis_example/01-chap1.Rmd

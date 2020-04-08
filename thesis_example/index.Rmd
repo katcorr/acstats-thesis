@@ -4,16 +4,15 @@ author: 'Your R. Name'
 date: 'May 20XX'
 institution: 'Amherst College'
 advisor: 'Advisor F. Name'
-# Delete altadvisor line if you only have one advisor
 altadvisor: 'Your Other Advisor'
-# Change department to`Special Programs' if interdisciplinary thesis
+# Delete altadvisor line if you only have one advisor
 department: 'Mathematics and Statistics'
 degree: 'Bachelor of Arts'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 output: 
-  acthesis::thesis_pdf: default
-#  acthesis::thesis_gitbook: default
+  thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
 # include table of contents, list of tables, list of figures
 toc: true
 lot: true # set to false if no tables present
@@ -44,7 +43,7 @@ csl: csl/apa.csl
 <!--
 Above is the YAML (YAML Ain't Markup Language) header that includes a lot of metadata used to produce the document.  Be careful with spacing in this header!
 
-If you'd prefer to not include a Dedication, for example, simply delete lines 32 and 33 above or add a # before them to comment them out.  If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
+If you'd prefer to not include a Dedication, for example, simply delete lines 26 and 27 above or add a # before them to comment them out.  If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
 
 If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
 -->
@@ -59,7 +58,6 @@ PDF files and also delete the # before rmd_files: there.
 ```{r include_packages, include = FALSE}
 # if you like to load your packages all at once
 # this is a good place to do it!
-library(acthesis) # loads dpylr, ggplot2, knitr, bookdown, and remotes
 ```
 
 <!-- 

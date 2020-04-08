@@ -5,9 +5,3 @@ utils
 grDevices
 graphics
 stats
-remotes
-dplyr
-ggplot2
-bookdown
-knitr
-acthesis
