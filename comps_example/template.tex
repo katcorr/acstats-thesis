@@ -1,52 +1,55 @@
-%===========================================================
-% This is the thesis template for the Statistics major at
-% Amherst College. Brittney E. Bailey (bebailey@amherst.edu)
-% adapted this template from the Reed College LaTeX thesis
-% template in January 2019 with major updates in April 2020.
-% Please send any comments/suggestions: bebailey@amherst.edu
+% This is the Amherst College Thesis and Comprehensive Evaluation
+% LaTeX template. Brittney E. Bailey adapted this template from the
+% Reed College LaTeX thesis template in January 2019. Most of the work
+% for the document class was done by Sam Noble (SN), as well as this
+% template. Later comments etc. by Ben Salzberg (BTS). Additional
+% restructuring and APA support by Jess Youngberg (JY).
+% Your comments and suggestions are more than welcome; please email
+% them to cus@reed.edu
+%
+% See http://web.reed.edu/cis/help/latex.html for help. There are a
+% great bunch of help pages there, with notes on
+% getting started, bibtex, etc. Go there and read it if you're not
+% already familiar with LaTeX.
+%
+% Any line that starts with a percent symbol is a comment.
+% They won't show up in the document, and are useful for notes
+% to yourself and explaining commands.
+% Commenting also removes a line from the document;
+% very handy for troubleshooting problems. -BTS
 
-% Most of the work for the original document class was done
-% by Sam Noble (SN), as well as this template. Later comments
-% etc. by Ben Salzberg (BTS). Additional restructuring and
-% APA support by Jess Youngberg (JY). Email: cus@reed.edu
-%===========================================================
-
+%%
+%% Preamble
+%%
+% \documentclass{<something>} must begin each LaTeX document
 \documentclass[12pt,twoside]{amherstthesis}
-%%%%%%%%
-% NOTE: Packages are extensions to the basic LaTeX functions.
-% Whatever you want to typeset, there is probably a package
-% out there for it.
+% Packages are extensions to the basic LaTeX functions. Whatever you
+% want to typeset, there is probably a package out there for it.
+% Chemistry (chemtex), screenplays, you name it.
 % Check out CTAN to see: http://www.ctan.org/
-%%%%%%%%
+%%
 \usepackage{graphicx,latexsym}
 \usepackage{amsmath}
 \usepackage{amssymb,amsthm}
 \usepackage{longtable,booktabs,setspace}
+\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
 \usepackage[hyphens]{url}
+% Added by CII
 \usepackage{hyperref}
 \usepackage{lmodern}
 \usepackage{float}
 \floatplacement{figure}{H}
+% End of CII addition
 \usepackage{rotating}
-% User-added packages:
-
-% End user-added packages
-
-%===========================================================
-% BIBLIOGRAPHY FORMATTING
 
 % Next line commented out by CII
 %%% \usepackage{natbib}
-% Comment out the natbib line above and uncomment the
-% following two lines to use the new biblatex-chicago style,
-% for Chicago A. Also make some changes at the end where the
+% Comment out the natbib line above and uncomment the following two lines to use the new
+% biblatex-chicago style, for Chicago A. Also make some changes at the end where the
 % bibliography is included.
 %\usepackage{biblatex-chicago}
 %\bibliography{thesis}
 
-
-%===========================================================
-% HYPERLINK FORMATTING
 
 % Added by CII (Thanks, Hadley!)
 % Use ref for internal links
@@ -62,27 +65,14 @@
     citecolor={blue!50!black},
     urlcolor={blue!80!black}
 }
-
-%===========================================================
-% CAPTION FORMATTING
-
-% Added by CII, approved by BEB
+% Added by CII
 \usepackage{caption}
 \captionsetup{width=5in}
 % End of CII addition
 
-%===========================================================
-% TITLE FORMATTING
-
-\renewcommand{\contentsname}{Table of Contents}
-
 \usepackage{titlesec}
-%%%%%%%%
-% How to use titlesec:
-% \titleformat{⟨command⟩}[⟨shape⟩]{⟨format⟩}{⟨label⟩}{⟨sep⟩}
-%  {⟨before-code⟩}[⟨afte-code⟩]
-%%%%%%%%
 
+% \titleformat{⟨command⟩}[⟨shape⟩]{⟨format⟩}{⟨label⟩}{⟨sep⟩}{⟨before-code⟩}[⟨after-code⟩]
 \titleformat{\chapter}[hang]
 {\normalfont%
     \Large% %change this size to your needs for the first line
@@ -111,21 +101,66 @@
 %     \normalsize %change this size to your needs for the second line
 %     }
 
+% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
-%===========================================================
-% DOCUMENT FONT
+% Syntax highlighting #22
+$if(highlighting-macros)$
+  $highlighting-macros$
+$endif$
 
-% \usepackage{times}
-% other fonts available eg: times, bookman, charter, palatino
+% To pass between YAML and LaTeX the dollar signs are added by CII
+\title{$title$}
+\author{$author$}
+% The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
+\date{$date$}
+\division{$division$}
+\advisor{$advisor$}
+\institution{$institution$}
+\degree{$degree$}
+%If you have two advisors for some reason, you can use the following
+% Uncommented out by CII
+$if(altadvisor)$
+\altadvisor{$altadvisor$}
+$endif$
+% End of CII addition
 
+%%% Remember to use the correct department!
+\department{$department$}
+% if you're writing a thesis in an interdisciplinary major,
+% uncomment the line below and change the text as appropriate.
+% check the Senior Handbook if unsure.
+%\thedivisionof{The Established Interdisciplinary Committee for}
+% if you want the approval page to say "Approved for the Committee",
+% uncomment the next line
+%\approvedforthe{Committee}
 
-%===========================================================
-% PASSING FORMATS FROM RMD --> LATEX
+% Added by CII
+%%% Copied from knitr
+%% maxwidth is the original width if it's less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
 
-%%%%%%%%
-% NOTE: Dollar signs pass parameters between YAML inputs
-% in index.Rmd and LaTeX
-%%%%%%%%
+\renewcommand{\contentsname}{Table of Contents}
+% End of CII addition
+
+\setlength{\parskip}{0pt}
+
+% Added by CII
+$if(space_between_paragraphs)$
+  %\setlength{\parskip}{\baselineskip}
+  \usepackage[parfill]{parskip}
+$endif$
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \Acknowledgements{
 $acknowledgements$
@@ -146,73 +181,12 @@ $abstract$
 $for(header-includes)$
 	$header-includes$
 $endfor$
+% End of CII addition
+%%
+%% End Preamble
+%%
+%
 
-% Syntax highlighting #22
-$if(highlighting-macros)$
-  $highlighting-macros$
-$endif$
-
-
-\title{$title$}
-\author{$author$}
-\date{$date$}
-\division{$division$}
-\advisor{$advisor$}
-% for second advisor
-$if(altadvisor)$
-\altadvisor{$altadvisor$}
-$endif$
-\institution{$institution$}
-\degree{$degree$}
-\department{$department$}
-% !!BEB: WANT TO ADD!!
-%% $if(interdisplinary: TRUE)$ option to change submission statement
-%% to: "Submitted to the Department of Special Programs of Amherst College
-%% in partial fulfillment of the requirements for the degree of Bachelor
-%% of Arts with honors."
-
-% original author's comments below:
-% if you're writing a thesis in an interdisciplinary major,
-% uncomment the line below and change the text as appropriate.
-% check the Senior Handbook if unsure.
-%\thedivisionof{The Established Interdisciplinary Committee for}
-% if you want the approval page to say "Approved for the Committee",
-% uncomment the next line
-%\approvedforthe{Committee}
-
-
-% !!BEB: FIGURE OUT WHAT THIS CODE DOES??
-% Added by CII
-%%% Copied from knitr
-%% maxwidth is the original width if it's less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-% ===========================================
-% DOCUMENT SPACING
-
-\setlength{\parskip}{0pt}
-% Added by CII
-$if(space_between_paragraphs)$
-  %\setlength{\parskip}{\baselineskip}
-  \usepackage[parfill]{parskip}
-$endif$
-
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-
-% ===========================================
-% ===========================================
-% ===========================================
 \begin{document}
 
 \doublespace
@@ -222,6 +196,7 @@ $if(title)$
 $endif$
 
 \frontmatter % this stuff will be roman-numbered
+
 \pagenumbering{roman}
 \pagestyle{fancyplain}
 %\pagestyle{fancy} % this removes page numbers from the frontmatter
