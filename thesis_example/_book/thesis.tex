@@ -280,10 +280,6 @@ Second paragraph of abstract starts here.
 \pagenumbering{arabic}
 \pagestyle{fancyplain} % turns page numbering back on
 
-The preface pretty much says it all. \par
-
-Second paragraph of abstract starts here.
-
 \chapter{Introduction}\label{intro}
 
 Welcome to the \emph{R Markdown} thesis template. This template is based
@@ -332,6 +328,39 @@ be anyone in the sciences, but the user-friendly nature of
 figures, automatically generate a table of contents, index, references,
 table of figures, etc. should make it of great benefit to nearly anyone
 writing a thesis project.
+
+\section{First numbered section}\label{first-numbered-section}
+
+Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah
+blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem
+ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah
+blah. Lorem ipsum blah blah blah.
+
+\subsection{Numbered Subsection}\label{numbered-subsection}
+
+Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
+blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
+ipsum blah blah blah. Lorem ipsum blah blah blah.
+
+\subsubsection{Subsubsections do not have
+numbers}\label{subsubsections-do-not-have-numbers}
+
+Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
+blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
+ipsum blah blah blah. Lorem ipsum blah blah blah.
+
+\paragraph{Paragraphs start in line with subsubsubsection
+headers.}\label{paragraphs-start-in-line-with-subsubsubsection-headers.}
+
+Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
+blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
+ipsum blah blah blah. Lorem ipsum blah blah blah.
+
+\subparagraph{How deep can this go?}\label{how-deep-can-this-go}
+
+Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
+blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
+ipsum blah blah blah. Lorem ipsum blah blah blah.
 
 \hypertarget{rmd-basics}{\chapter{R Markdown Basics}\label{rmd-basics}}
 
@@ -1021,7 +1050,8 @@ chunk tag) to help with readibility and/or setup.
 \textbf{In the main Rmd file}
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{# load required packages}
+\CommentTok{# if you like to load your packages all at once}
+\CommentTok{# this is a good place to do it!}
 \end{Highlighting}
 \end{Shaded}
 \textbf{In Chapter \ref{ref-labels}:}

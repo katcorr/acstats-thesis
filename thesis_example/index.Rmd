@@ -58,7 +58,8 @@ PDF files and also delete the # before rmd_files: there.
 
 
 ```{r include_packages, include = FALSE}
-# load required packages
+# if you like to load your packages all at once
+# this is a good place to do it!
 ```
 
 
