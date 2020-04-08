@@ -244,6 +244,22 @@ Second paragraph of abstract starts here.
 % ===========================================
 % ===========================================
 % ===========================================
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{conjecture}{Conjecture}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
 
 \doublespace
@@ -304,6 +320,35 @@ before, taxing Word's capabilities. After working with \emph{Markdown}
 and \textbf{R} together for a few weeks, we are confident this will be
 your reporting style of choice going forward.
 
+\section{Testing output width and
+spacing}\label{testing-output-width-and-spacing}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hook_output =}\StringTok{ }\NormalTok{knitr}\OperatorTok{::}\NormalTok{knit_hooks}\OperatorTok{$}\KeywordTok{get}\NormalTok{(}\StringTok{'output'}\NormalTok{)}
+\NormalTok{knit_hooks}\OperatorTok{$}\KeywordTok{set}\NormalTok{(}\DataTypeTok{output =} \ControlFlowTok{function}\NormalTok{(x, options) \{}
+  \CommentTok{# this hook is used only when the linewidth option is not NULL}
+  \ControlFlowTok{if}\NormalTok{ (}\OperatorTok{!}\KeywordTok{is.null}\NormalTok{(n <-}\StringTok{ }\NormalTok{options}\OperatorTok{$}\NormalTok{linewidth)) \{}
+\NormalTok{    x =}\StringTok{ }\NormalTok{knitr}\OperatorTok{:::}\KeywordTok{split_lines}\NormalTok{(x)}
+    \CommentTok{# any lines wider than n should be wrapped}
+    \ControlFlowTok{if}\NormalTok{ (}\KeywordTok{any}\NormalTok{(}\KeywordTok{nchar}\NormalTok{(x) }\OperatorTok{>}\StringTok{ }\NormalTok{n)) x =}\StringTok{ }\KeywordTok{strwrap}\NormalTok{(x, }\DataTypeTok{width =}\NormalTok{ n, }\DataTypeTok{exdent =} \DecValTok{4}\NormalTok{, }\DataTypeTok{indent =} \DecValTok{4}\NormalTok{)}
+\NormalTok{    x =}\StringTok{ }\KeywordTok{paste}\NormalTok{(x, }\DataTypeTok{collapse =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{'}\NormalTok{)}
+\NormalTok{  \}}
+  \KeywordTok{hook_output}\NormalTok{(x, options)}
+\NormalTok{\})}
+\end{Highlighting}
+\end{Shaded}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a <-}\StringTok{ '## "stx2A; shiga-like toxin II A subunit encoded by bacteriophage BP-933W; K11006 shiga toxin subunit A" this is just going to keep going and going until i get a third line so i can see what it looks like and do we have a third line yet?'}
+\NormalTok{a}
+\end{Highlighting}
+\end{Shaded}
+\begin{verbatim}
+    [1] "## \"stx2A; shiga-like toxin II A subunit encoded by
+    bacteriophage BP-933W; K11006 shiga toxin subunit A\" this is
+    just going to keep going and going until i get a third line so i
+    can see what it looks like and do we have a third line yet?"
+\end{verbatim}
 \section*{Why use it?}\label{why-use-it}
 \addcontentsline{toc}{section}{Why use it?}
 
@@ -328,6 +373,15 @@ be anyone in the sciences, but the user-friendly nature of
 figures, automatically generate a table of contents, index, references,
 table of figures, etc. should make it of great benefit to nearly anyone
 writing a thesis project.
+
+\BeginKnitrBlock{proof}[This is a proof]
+\iffalse{} {Proof (This is a proof). } \fi{}There is a proof environment
+in which you can create equations
+
+\[
+\hat{\beta}_0 + \hat{\beta}_1x
+\]
+\EndKnitrBlock{proof}
 
 \hypertarget{rmd-basics}{\chapter{R Markdown Basics}\label{rmd-basics}}
 

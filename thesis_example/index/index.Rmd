@@ -37,8 +37,8 @@ csl: csl/apa.csl
 # Download your specific csl file and refer to it in the line above.
 # Delete the # at the beginning of the previous line if you'd like
 # to have a blank new line between each paragraph
-#header-includes:
-#- \usepackage{tikz}
+# header-includes:
+# - \usepackage{tikz}
 ---
 
 <!--
@@ -56,14 +56,11 @@ If you receive a duplicate label error after knitting, make sure to delete the i
 <!-- You'll need to include the order that you'd like Rmd files to appear in the _bookdown.yml file for
 PDF files and also delete the # before rmd_files: there.  
 -->
-
-
 ```{r include_packages, include = FALSE}
 # if you like to load your packages all at once
 # this is a good place to do it!
 library(acthesis) # loads dpylr, ggplot2, knitr, bookdown, and remotes
 ```
-
 
 <!-- 
 If knitting to HTML, the following code is required to number equations in HTML files 
@@ -74,3 +71,19 @@ MathJax.Hub.Config({
 });
 </script>
 
+
+```{r wrap-hook, include = FALSE}
+# This code defines a new code chunk option 'linewidth' that allows you to wrap code.
+# Recommmendation: set linewidth = 70 for code chunks that have R output that runs off the page
+hook_output = knitr::knit_hooks$get('output')
+knit_hooks$set(output = function(x, options) {
+  # this hook is used only when the linewidth option is not NULL
+  if (!is.null(n <- options$linewidth)) {
+    x = knitr:::split_lines(x)
+    # any lines wider than n should be wrapped
+    if (any(nchar(x) > n)) x = strwrap(x, width = n, exdent = 4, indent = 4)
+    x = paste(x, collapse = '\n')
+  }
+  hook_output(x, options)
+})
+```
