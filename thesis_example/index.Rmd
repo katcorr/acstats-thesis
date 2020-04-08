@@ -1,0 +1,73 @@
+---
+title: 'My amazing  title'
+author: 'Your R. Name'
+date: 'May 20XX'
+institution: 'Amherst College'
+advisor: 'Advisor F. Name'
+altadvisor: 'Your Other Advisor'
+# Delete altadvisor line if you only have one advisor
+department: 'Mathematics and Statistics'
+degree: 'Bachelor of Arts'
+knit: "bookdown::render_book"
+site: bookdown::bookdown_site
+output: 
+  thesisdown::thesis_pdf: default
+#  thesisdown::thesis_gitbook: default
+# include table of contents, list of tables, list of figures
+toc: true
+lot: true # set to false if no tables present
+lof: true # set to false if no figures present
+# PRELIMINARY CONTENT
+# If you are creating a PDF you'll need to write your preliminary content here or
+# use code similar to line 19 for the files.  If you are producing in a different
+# format than PDF, you can delete or ignore lines 19-30 in this YAML header.
+abstract: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+# If you'd rather include the preliminary content in files instead of inline
+# like below, use a command like that for the abstract above.  Note that a tab is 
+# needed on the line after the |.
+acknowledgements: |
+  I want to thank a few people.
+dedication: |
+  You can have a dedication here if you wish. 
+bibliography: bib/thesis.bib
+# Download your specific bibliography database file and refer to it in the line above.
+csl: csl/apa.csl
+# Download your specific csl file and refer to it in the line above.
+# Delete the # at the beginning of the previous line if you'd like
+# to have a blank new line between each paragraph
+#header-includes:
+#- \usepackage{tikz}
+---
+
+<!--
+Above is the YAML (YAML Ain't Markup Language) header that includes a lot of metadata used to produce the document.  Be careful with spacing in this header!
+
+If you'd prefer to not include a Dedication, for example, simply delete lines 26 and 27 above or add a # before them to comment them out.  If you have other LaTeX packages you would like to include, delete the # before header-includes and list the packages after hyphens on new lines.
+
+If you'd like to include a comment that won't be produced in your resulting file enclose it in a block like this.
+-->
+
+<!--
+If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
+-->
+
+<!-- You'll need to include the order that you'd like Rmd files to appear in the _bookdown.yml file for
+PDF files and also delete the # before rmd_files: there.  
+-->
+
+
+```{r include_packages, include = FALSE}
+# load required packages
+```
+
+
+<!-- 
+If knitting to HTML, the following code is required to number equations in HTML files 
+-->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+

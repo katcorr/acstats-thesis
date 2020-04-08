@@ -1,6 +1,6 @@
-Package: thesisdown
+Package: acthesis
 Title: An updated R Markdown thesis template using the bookdown package
-Version: 0.0.2
+Version: 0.0.1
 Authors@R: c(
     person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "aut"),
     person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),
