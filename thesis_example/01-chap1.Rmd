@@ -23,6 +23,7 @@ _R Markdown_ creates a simple and straightforward way to interface with the beau
 ## Who should use it? {-}
 
 Anyone who needs to use data analysis, math, tables, a lot of figures, complex cross-references, or who just cares about the final appearance of their document should use _R Markdown_. Of particular use should be anyone in the sciences, but the user-friendly nature of _Markdown_ and its ability to keep track of and easily include figures, automatically generate a table of contents, index, references, table of figures, etc. should make it of great benefit to nearly anyone writing a thesis project.
+<<<<<<< HEAD
 
 <<<<<<< HEAD:thesis_example/index/01-chap1.Rmd
 ```{proof myproof, name = "This is a proof"}
@@ -58,3 +59,5 @@ Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah blah blah
 
 Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.
 >>>>>>> parent of e92eb33... Working thesis doc!:thesis_example/01-chap1.Rmd
+=======
+>>>>>>> parent of 1b03b9b... Fixed document order

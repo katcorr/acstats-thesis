@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 APR 2020 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 APR 2020 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,55 +757,53 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 [11] [12
 
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.287 \chapter
+              {Introduction}\label{intro} [1]pdfTeX warning (ext4): destination
+ with the same identifier (name{page.2}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.287 \chapter
+              {Introduction}\label{intro} [2
+
 ]
 Chapter 1.
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 308.
+(hyperref)                be the same. Added a new anchor on input line 312.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.319 
-       [1
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.344 
-       [2] [3] [4
-
-]
+[3] [4]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 372.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 343.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 387.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 358.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [5] [6]
+) [5
+
+] [6]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 448.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 419.
 [7]
-<thesis_files/figure-latex/pressure-1.pdf, id=284, 434.62375pt x 250.9375pt>
+<thesis_files/figure-latex/pressure-1.pdf, id=274, 434.62375pt x 250.9375pt>
 File: thesis_files/figure-latex/pressure-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/pressure-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/pressure-1.pdf  used on inpu
-t line 493.
+t line 464.
 (pdftex.def)             Requested size: 434.62268pt x 250.93687pt.
 
-Overfull \hbox (18.6275pt too wide) in paragraph at lines 493--494
+Overfull \hbox (18.6275pt too wide) in paragraph at lines 464--465
 [][] 
  []
 
@@ -813,21 +811,21 @@ Overfull \hbox (18.6275pt too wide) in paragraph at lines 493--494
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [8 <./thesis_files/figure-latex/pressure-1.pdf>] [9]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 575
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 546
 .
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [10] [11] [12
 
 ] [13]
-<thesis_files/figure-latex/march3plot-1.pdf, id=326, 423.5825pt x 206.7725pt>
+<thesis_files/figure-latex/march3plot-1.pdf, id=316, 423.5825pt x 206.7725pt>
 File: thesis_files/figure-latex/march3plot-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/march3plot-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/march3plot-1.pdf  used on in
-put line 685.
+put line 656.
 (pdftex.def)             Requested size: 423.58147pt x 206.77199pt.
 
-Overfull \hbox (7.58629pt too wide) in paragraph at lines 685--686
+Overfull \hbox (7.58629pt too wide) in paragraph at lines 656--657
 [][] 
  []
 
@@ -836,7 +834,7 @@ Chapter 3.
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 716.
+(amsmath)                 on input line 687.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -851,13 +849,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [17
 
 ] [18]
-<figures/amherst.png, id=378, 475.7775pt x 475.7775pt>
+<figures/amherst.png, id=368, 475.7775pt x 475.7775pt>
 File: figures/amherst.png Graphic file (type png)
 <use figures/amherst.png>
-Package pdftex.def Info: figures/amherst.png  used on input line 880.
+Package pdftex.def Info: figures/amherst.png  used on input line 851.
 (pdftex.def)             Requested size: 475.53673pt x 475.55852pt.
 
-Overfull \hbox (41.91673pt too wide) in paragraph at lines 880--880
+Overfull \hbox (41.91673pt too wide) in paragraph at lines 851--851
 [][] 
  []
 
@@ -867,30 +865,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [19
 
 ] [20 <./figures/amherst.png>]
-<thesis_files/figure-latex/delaysboxplot-1.pdf, id=391, 423.5825pt x 313.17pt>
+<thesis_files/figure-latex/delaysboxplot-1.pdf, id=381, 423.5825pt x 313.17pt>
 File: thesis_files/figure-latex/delaysboxplot-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/delaysboxplot-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/delaysboxplot-1.pdf  used on
- input line 907.
+ input line 878.
 (pdftex.def)             Requested size: 423.58147pt x 313.16922pt.
 [21
 
  <./thesis_files/figure-latex/delaysboxplot-1.pdf>] [22]
-<figures/subdivision.pdf, id=410, 220.825pt x 89.33376pt>
+<figures/subdivision.pdf, id=400, 220.825pt x 89.33376pt>
 File: figures/subdivision.pdf Graphic file (type pdf)
 <use figures/subdivision.pdf>
-Package pdftex.def Info: figures/subdivision.pdf  used on input line 922.
+Package pdftex.def Info: figures/subdivision.pdf  used on input line 893.
 (pdftex.def)             Requested size: 165.61833pt x 67.00014pt.
 File: figures/subdivision.pdf Graphic file (type pdf)
 <use figures/subdivision.pdf>
-Package pdftex.def Info: figures/subdivision.pdf  used on input line 934.
+Package pdftex.def Info: figures/subdivision.pdf  used on input line 905.
 (pdftex.def)             Requested size: 220.82445pt x 89.33353pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 940.
+(Font)              <10> on input line 911.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 940.
+(Font)              <7> on input line 911.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 940.
+(Font)              <5> on input line 911.
 [23
 
  <./figures/subdivision.pdf>] [24]
@@ -909,31 +907,31 @@ Appendix B.
 [31] [32
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1104.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1074.
 [33
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1074.
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1104.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1074.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1074.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 02932E453CA64C96BA5A30E2AA1BEDE0;1947.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1104.
+(rerunfilecheck)             Checksum: 95D7FDDDB8C5301DC59603DEDC88EA8E;1805.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1074.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 249 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11530 strings out of 492649
- 175797 string characters out of 6129622
- 301955 words of memory out of 5000000
- 14959 multiletter control sequences out of 15000+600000
- 75431 words of font info for 125 fonts, out of 8000000 for 9000
+ 11510 strings out of 492649
+ 175390 string characters out of 6129622
+ 301642 words of memory out of 5000000
+ 14943 multiletter control sequences out of 15000+600000
+ 75340 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,49p,268b,664s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,49p,268b,641s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.en
 c}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
 cal/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texliv
@@ -956,10 +954,10 @@ texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist
 m/lmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti10.
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb>
-Output written on thesis.pdf (47 pages, 401665 bytes).
+Output written on thesis.pdf (47 pages, 400329 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 527 compressed objects within 6 object streams
- 103 named destinations out of 1000 (max. 500000)
- 12570 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 606 PDF objects out of 1000 (max. 8388607)
+ 516 compressed objects within 6 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 12554 words of extra memory for PDF output out of 14400 (max. 10000000)
 

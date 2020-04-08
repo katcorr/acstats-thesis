@@ -56,8 +56,7 @@ If you receive a duplicate label error after knitting, make sure to delete the i
 PDF files and also delete the # before rmd_files: there.  
 -->
 ```{r include_packages, include = FALSE}
-# if you like to load your packages all at once
-# this is a good place to do it!
+# load required packages
 ```
 
 <!-- 
