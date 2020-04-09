@@ -1,7 +1,7 @@
 #' Creates an R Markdown PDF Thesis document
 #'
 #' This is a function called in output in the YAML of the driver Rmd file
-#' to specify using the Amherst College Senior Thesis LaTeX template and cls files.
+#' to specify using the Reed College Senior Thesis LaTeX template and cls files.
 #'
 #' @export
 #' @param toc A Boolean (TRUE or FALSE) specifying whether table of contents should be created
@@ -25,10 +25,6 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", ...){
 
   # Mostly copied from knitr::render_sweave
   base$knitr$opts_chunk$comment <- "\t"
-<<<<<<< HEAD
-  base$knitr$opts_chunk$size <- 9
-=======
->>>>>>> parent of e92eb33... Working thesis doc!
   #base$knitr$opts_chunk$fig.align <- "center"
 
   old_opt <- getOption("bookdown.post.latex")

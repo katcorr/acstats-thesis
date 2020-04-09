@@ -205,27 +205,6 @@ You can have a dedication here if you wish.
 
 }
 
-<<<<<<< HEAD:thesis_example/_book/thesis.tex
-% ===========================================
-% ===========================================
-% ===========================================
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
-\let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
-=======
 \Abstract{
 The preface pretty much says it all. \par
 
@@ -237,7 +216,6 @@ Second paragraph of abstract starts here.
 %% End Preamble
 %%
 %
->>>>>>> parent of 54c1bfc... quick template fix:comps_example/_book/thesis.tex
 \begin{document}
 
 \doublespace
@@ -300,41 +278,7 @@ before, taxing Word's capabilities. After working with \emph{Markdown}
 and \textbf{R} together for a few weeks, we are confident this will be
 your reporting style of choice going forward.
 
-<<<<<<< HEAD:thesis_example/_book/thesis.tex
-\section{Testing output width and
-spacing}\label{testing-output-width-and-spacing}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{hook_output =}\StringTok{ }\NormalTok{knitr}\OperatorTok{::}\NormalTok{knit_hooks}\OperatorTok{$}\KeywordTok{get}\NormalTok{(}\StringTok{'output'}\NormalTok{)}
-\NormalTok{knit_hooks}\OperatorTok{$}\KeywordTok{set}\NormalTok{(}\DataTypeTok{output =} \ControlFlowTok{function}\NormalTok{(x, options) \{}
-  \CommentTok{# this hook is used only when the linewidth option is not NULL}
-  \ControlFlowTok{if}\NormalTok{ (}\OperatorTok{!}\KeywordTok{is.null}\NormalTok{(n <-}\StringTok{ }\NormalTok{options}\OperatorTok{$}\NormalTok{linewidth)) \{}
-\NormalTok{    x =}\StringTok{ }\NormalTok{knitr}\OperatorTok{:::}\KeywordTok{split_lines}\NormalTok{(x)}
-    \CommentTok{# any lines wider than n should be wrapped}
-    \ControlFlowTok{if}\NormalTok{ (}\KeywordTok{any}\NormalTok{(}\KeywordTok{nchar}\NormalTok{(x) }\OperatorTok{>}\StringTok{ }\NormalTok{n)) x =}\StringTok{ }\KeywordTok{strwrap}\NormalTok{(x, }\DataTypeTok{width =}\NormalTok{ n, }\DataTypeTok{exdent =} \DecValTok{4}\NormalTok{, }\DataTypeTok{indent =} \DecValTok{4}\NormalTok{)}
-\NormalTok{    x =}\StringTok{ }\KeywordTok{paste}\NormalTok{(x, }\DataTypeTok{collapse =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{'}\NormalTok{)}
-\NormalTok{  \}}
-  \KeywordTok{hook_output}\NormalTok{(x, options)}
-\NormalTok{\})}
-\end{Highlighting}
-\end{Shaded}
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{a <-}\StringTok{ '## "stx2A; shiga-like toxin II A subunit encoded by bacteriophage BP-933W; K11006 shiga toxin subunit A" this is just going to keep going and going until i get a third line so i can see what it looks like and do we have a third line yet?'}
-\NormalTok{a}
-\end{Highlighting}
-\end{Shaded}
-\begin{verbatim}
-    [1] "## \"stx2A; shiga-like toxin II A subunit encoded by
-    bacteriophage BP-933W; K11006 shiga toxin subunit A\" this is
-    just going to keep going and going until i get a third line so i
-    can see what it looks like and do we have a third line yet?"
-\end{verbatim}
-\section*{Why use it?}\label{why-use-it}
-\addcontentsline{toc}{section}{Why use it?}
-=======
 \textbf{Why use it?}
->>>>>>> parent of 54c1bfc... quick template fix:comps_example/_book/thesis.tex
 
 \emph{R Markdown} creates a simple and straightforward way to interface
 with the beauty of LaTeX. Packages have been written in \textbf{R} to
@@ -357,60 +301,10 @@ figures, automatically generate a table of contents, index, references,
 table of figures, etc. should make it of great benefit to nearly anyone
 writing a thesis project.
 
-<<<<<<< HEAD:thesis_example/_book/thesis.tex
-<<<<<<< HEAD
-<<<<<<< HEAD:thesis_example/index/_book/lastName_firstName-thesis.tex
-\BeginKnitrBlock{proof}[This is a proof]
-\iffalse{} {Proof (This is a proof). } \fi{}There is a proof environment
-in which you can create equations
-
-\[
-\hat{\beta}_0 + \hat{\beta}_1x
-\]
-\EndKnitrBlock{proof}
-=======
-\section{First numbered section}\label{first-numbered-section}
-
-Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah
-blah. Lorem ipsum blah blah blah.
-
-\subsection{Numbered Subsection}\label{numbered-subsection}
-
-Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah.
-
-\subsubsection{Subsubsections do not have
-numbers}\label{subsubsections-do-not-have-numbers}
-
-Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah.
-
-\paragraph{Paragraphs start in line with subsubsubsection
-headers.}\label{paragraphs-start-in-line-with-subsubsubsection-headers.}
-
-Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah.
-
-\subparagraph{How deep can this go?}\label{how-deep-can-this-go}
-
-Lorem ipsum blah blah blah Lorem ipsum blah blah blah.Lorem ipsum blah
-blah blah. Lorem ipsum blah blah blah. Lorem ipsum blah blah blah.Lorem
-ipsum blah blah blah. Lorem ipsum blah blah blah.
->>>>>>> parent of e92eb33... Working thesis doc!:thesis_example/_book/thesis.tex
-
-=======
->>>>>>> parent of 1b03b9b... Fixed document order
-=======
 The preface pretty much says it all. \par
 
 Second paragraph of abstract starts here.
 
->>>>>>> parent of 54c1bfc... quick template fix:comps_example/_book/thesis.tex
 \hypertarget{rmd-basics}{\chapter{R Markdown Basics}\label{rmd-basics}}
 
 Here is a brief introduction into using \emph{R Markdown}.
