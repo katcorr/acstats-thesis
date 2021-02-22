@@ -1,6 +1,6 @@
 # ARCHIVED FOR 2020 THESIS STUDENTS
 
-Current students should be using acthesis for the most up-to-date version.
+Current students should be using [acthesis](https://github.com/Amherst-Statistics/acthesis) for the most up-to-date version.
 
 # acstats-thesis
 
